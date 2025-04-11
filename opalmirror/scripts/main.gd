@@ -9,5 +9,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	get_tree().call_group("enemy", "target_position", target.global_transform.origin)
+	get_tree().call_group("Enemy", "target_position", target.global_transform.origin)
 	
