@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1744405063
+icon.svg::CompressedTexture2D/CompressedTexture2D::1038096818682612479::1744404897::1744404996::1::::<><><>0<>0<>e2930d524247b94d1a692612701f3e69<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+player.tscn::PackedScene/PackedScene::4154075868826383616::1744404897::0::1::::<><><>0<>0<><>::uid://dw4ay61cip1la::::res://Player.gd
+World.tscn::PackedScene::97895934435730856::1744405067::0::1::::<><><>0<>0<><>::uid://dit5umfvw78u7::::res://assets/tileset.tres<>uid://b0gja1f5vysmq::::res://player.tscn<>uid://sgef5vt5ofnj::::res://scenes/enemy.tscn
+::res://assets/::1744405058
+flame_03.png::CompressedTexture2D/CompressedTexture2D::5947239044182952487::1744404897::1744405058::1::::<><><>0<>0<>474c8ee152ce1eb17a557e99f7272fba<>res://.godot/imported/flame_03.png-b4f0f39f6009482afc0c422ec206dbe9.s3tc.ctex::
+tileset.glb::PackedScene/PackedScene::4244932463211027155::1744404897::1744405058::1::::<><><>0<>0<>a32d64243cc92ac45decb5b6e92bfd00<>res://.godot/imported/tileset.glb-60d4ca197f873c16e350d244108aa1f7.scn::uid://jfgpo31pk6aj::::res://assets/tileset_atlas.png<>uid://5hsw3wam88fw::::res://assets/tileset_atlas_n.png
+tileset.tres::MeshLibrary::7761853842160853516::1744405067::0::1::::<><><>0<>0<><>::uid://jfgpo31pk6aj::::res://assets/tileset_atlas.png<>uid://5hsw3wam88fw::::res://assets/tileset_atlas_n.png
+tileset.tscn::PackedScene/PackedScene::7747482539823637967::1744405058::0::1::::<><><>0<>0<><>::uid://b1qjogurep5ad::::res://assets/tileset.glb
+tileset_atlas.png::CompressedTexture2D/CompressedTexture2D::642413350160983173::1744404897::1744405058::1::::<><><>0<>0<>1f8dd113ea4a35747539d44fad4b2f69<>res://.godot/imported/tileset_atlas.png-175012b8a8a86b5552790101927b312d.s3tc.ctex::
+tileset_atlas_n.png::CompressedTexture2D/CompressedTexture2D::2121249651411966604::1744404897::1744405058::1::::<><><>0<>0<>8e7aad65f40bc378008a1845faba6dc5<>res://.godot/imported/tileset_atlas_n.png-aa5840e77e9893102267dd12ee625ac1.s3tc.ctex::
+::res://scenes/::1744405058
+enemy.tscn::PackedScene/PackedScene::1276038857994848583::1744405058::0::1::::<><><>0<>0<><>::uid://cqy5fm3eqk7vn::::res://assets/flame_03.png
+::res://scripts/::1744405063
+Player.gd::GDScript::6978536232860125686::1744404897::0::1::::<>CharacterBody3D<><>0<>0<><>::
