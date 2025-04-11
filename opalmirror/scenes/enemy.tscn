@@ -1,0 +1,74 @@
+[gd_scene load_steps=9 format=3 uid="uid://sgef5vt5ofnj"]
+
+[ext_resource type="Texture2D" uid="uid://cqy5fm3eqk7vn" path="res://assets/flame_03.png" id="1_7k104"]
+
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7xaro"]
+transparency = 1
+blend_mode = 2
+albedo_color = Color(0.0232796, 1.29953e-06, 0.192523, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_7k104"]
+material = SubResource("StandardMaterial3D_7xaro")
+radius = 0.3
+height = 0.3
+radial_segments = 12
+rings = 12
+
+[sub_resource type="Curve" id="Curve_4gyqm"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.610294, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_qi2p4"]
+curve = SubResource("Curve_4gyqm")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_7xaro"]
+emission_shape_scale = Vector3(0.7, 0.7, 1)
+angle_min = -0.999989
+angle_max = 1.00001
+direction = Vector3(0, 1, 0)
+initial_velocity_min = 0.4
+initial_velocity_max = 0.7
+angular_velocity_min = 66.46
+angular_velocity_max = 110.77
+radial_velocity_min = -0.500022
+radial_velocity_max = -0.500022
+gravity = Vector3(0, 0, 0)
+scale_min = 0.0
+scale_max = 1.5
+scale_curve = SubResource("CurveTexture_qi2p4")
+color = Color(0.076318, 6.73831e-07, 0.427417, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iifgy"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.366595, 0.366595, 0.366595, 1)
+albedo_texture = ExtResource("1_7k104")
+texture_filter = 0
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_7k104"]
+material = SubResource("StandardMaterial3D_iifgy")
+
+[node name="Enemy" type="Area3D" groups=["Enemy"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D" groups=["Enemy"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0559164, 0)
+mesh = SubResource("SphereMesh_7k104")
+skeleton = NodePath("../..")
+
+[node name="flame" type="GPUParticles3D" parent="CollisionShape3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0111529, 0.150775, -0.0181052)
+amount = 16
+preprocess = 2.0
+speed_scale = 0.25
+collision_base_size = 0.0
+trail_lifetime = 3.13
+process_material = SubResource("ParticleProcessMaterial_7xaro")
+draw_pass_1 = SubResource("QuadMesh_7k104")
