@@ -1,2 +1,7 @@
+AnimationPlayer
+AnimatedSprite3D
+Node3D
+CharacterBody3D
+MeshInstance3D
 NavigationAgent3D
 NavigationRegion3D

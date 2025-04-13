@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 @onready var nav = $NavigationAgent3D
-var speed = 3.5
+var speed = 1.8
 var gravity = 9.8
 
 # Called when the node enters the scene tree for the first time.
@@ -24,3 +24,4 @@ func _process(delta: float) -> void:
 
 func target_position(target):
 	nav.target_position = target
+	look_at(target,Vector3.UP,true)
