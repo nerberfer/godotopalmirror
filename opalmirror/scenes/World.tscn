@@ -58,4 +58,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.12352, 6.5376, -0.646355)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.5906, 7.36737, -14.1967)
 
 [node name="basic_enemy" parent="." groups=["Enemy"] instance=ExtResource("4_d1c63")]
-transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 1.2156, 7.17791, -15.9829)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.2156, 7.604, -15.9829)

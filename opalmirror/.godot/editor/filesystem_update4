@@ -2,3 +2,5 @@ res://assets/tileset.tres
 res://scenes/World.tscn
 res://scenes/basic_enemy.tscn
 res://scenes/smackstudiotest.tscn
+res://scenes/player.tscn
+res://scripts/basic_enemy.gd

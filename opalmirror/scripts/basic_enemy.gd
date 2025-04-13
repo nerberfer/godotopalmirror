@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 @onready var nav = $NavigationAgent3D
-var speed = 1.8
+var speed = 1.5
 var gravity = 9.8
 
 # Called when the node enters the scene tree for the first time.
