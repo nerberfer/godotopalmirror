@@ -1,1 +1,4 @@
+res://scenes/World.tscn
+res://assets/tileset.tres
+res://scenes/basic_enemy.tscn
 res://scenes/player.tscn
