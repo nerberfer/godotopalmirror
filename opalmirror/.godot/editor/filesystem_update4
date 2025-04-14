@@ -1,4 +1,6 @@
-res://scenes/World.tscn
-res://assets/tileset.tres
-res://scenes/basic_enemy.tscn
 res://scenes/player.tscn
+res://assets/tileset.tres
+res://scenes/World.tscn
+res://scenes/basic_enemy.tscn
+res://scenes/hatchet.tscn
+res://scripts/Player.gd

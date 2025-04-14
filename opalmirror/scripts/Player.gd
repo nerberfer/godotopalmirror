@@ -19,7 +19,8 @@ func _process(delta):
 	if Input.is_action_just_pressed("quit"):
 		get_tree().quit()
 		
-	if Input.is_action_just_pressed("attack"):
+	if Input.is_action_just_pressed("attack") and not anim_player.current_animation == "attack":
+		anim_player.stop()
 		anim_player.play("attack")
 		hitbox.monitoring = true
 

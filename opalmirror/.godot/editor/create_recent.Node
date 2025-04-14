@@ -1,3 +1,5 @@
+CollisionShape3D
+Area3D
 AnimationTree
 AnimationPlayer
 AnimatedSprite3D
