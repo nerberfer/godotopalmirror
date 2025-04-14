@@ -1,12 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< Updated upstream
 ::res://::1744666675
 ::res://assets/::1744666634
+=======
+::res://::1744661980
+::res://assets/::1744653059
+>>>>>>> Stashed changes
 flame_03.png::CompressedTexture2D/CompressedTexture2D::5947239044182952487::1744404897::1744405058::1::::<><><>0<>0<>474c8ee152ce1eb17a557e99f7272fba<>res://.godot/imported/flame_03.png-b4f0f39f6009482afc0c422ec206dbe9.s3tc.ctex::
 granite walk.png::CompressedTexture2D/CompressedTexture2D::4120495234796758871::1744579155::1744579174::1::::<><><>0<>0<>e6b08f3995ac3cabf37a10506c81b91f<>res://.godot/imported/granite walk.png-7cb60f7f87c9d39664f9fd24a01eec25.s3tc.ctex::
 Hatchet.glb::PackedScene/PackedScene::295678188816814575::1744666590::1744666609::1::::<><><>0<>0<>3aefbf9d0724b290a1f0a8476e040f56<>res://.godot/imported/Hatchet.glb-bba3a6531d7faaff0e174c333fd21fa4.scn::
 icon.svg::CompressedTexture2D/CompressedTexture2D::1038096818682612479::1744404897::1744405522::1::::<><><>0<>0<>d4250035f4ca175af7b29ef8c2fdceb3<>res://.godot/imported/icon.svg-56083ea2a1f1a4f1e49773bdc6d7826c.ctex::
 opalbuster.png::CompressedTexture2D/CompressedTexture2D::3277369190204415329::1744579155::1744579174::1::::<><><>0<>0<>f8028ce66c2965271613d99d54f9294a<>res://.godot/imported/opalbuster.png-c0332c8c090aa6381d77776ecaa3a71f.s3tc.ctex::
 tileset.glb::PackedScene/PackedScene::4244932463211027155::1744404897::1744405058::1::::<><><>0<>0<>a32d64243cc92ac45decb5b6e92bfd00<>res://.godot/imported/tileset.glb-60d4ca197f873c16e350d244108aa1f7.scn::uid://jfgpo31pk6aj::::res://assets/tileset_atlas.png<>uid://5hsw3wam88fw::::res://assets/tileset_atlas_n.png
+<<<<<<< Updated upstream
 tileset.tres::MeshLibrary::7761853842160853516::1744666634::0::1::::<><><>0<>0<><>::uid://jfgpo31pk6aj::::res://assets/tileset_atlas.png<>uid://5hsw3wam88fw::::res://assets/tileset_atlas_n.png
 tileset.tscn::PackedScene/PackedScene::7747482539823637967::1744405058::0::1::::<><><>0<>0<><>::uid://b1qjogurep5ad::::res://assets/tileset.glb
 tileset_atlas.png::CompressedTexture2D/CompressedTexture2D::642413350160983173::1744404897::1744405058::1::::<><><>0<>0<>1f8dd113ea4a35747539d44fad4b2f69<>res://.godot/imported/tileset_atlas.png-175012b8a8a86b5552790101927b312d.s3tc.ctex::
@@ -18,7 +24,24 @@ hatchet.tscn::PackedScene::612578596731302499::1744666641::0::1::::<><><>0<>0<><
 player.tscn::PackedScene::4154075868826383616::1744666641::0::1::::<><><>0<>0<><>::uid://c6opqb3q4nb63::::res://scripts/Player.gd
 World.tscn::PackedScene::97895934435730856::1744666641::0::1::::<><><>0<>0<><>::uid://dciurx2wmw6m0::::res://scripts/main.gd<>uid://dit5umfvw78u7::::res://assets/tileset.tres<>uid://b0gja1f5vysmq::::res://scenes/player.tscn<>uid://bnbf3axpcamlm::::res://scenes/basic_enemy.tscn<>uid://sgef5vt5ofnj::::res://scenes/enemy.tscn
 ::res://scripts/::1744666634
+=======
+tileset.tres::MeshLibrary::7761853842160853516::1744653059::0::1::::<><><>0<>0<><>::uid://jfgpo31pk6aj::::res://assets/tileset_atlas.png<>uid://5hsw3wam88fw::::res://assets/tileset_atlas_n.png
+tileset.tscn::PackedScene/PackedScene::7747482539823637967::1744405058::0::1::::<><><>0<>0<><>::uid://b1qjogurep5ad::::res://assets/tileset.glb
+tileset_atlas.png::CompressedTexture2D/CompressedTexture2D::642413350160983173::1744404897::1744405058::1::::<><><>0<>0<>1f8dd113ea4a35747539d44fad4b2f69<>res://.godot/imported/tileset_atlas.png-175012b8a8a86b5552790101927b312d.s3tc.ctex::
+tileset_atlas_n.png::CompressedTexture2D/CompressedTexture2D::2121249651411966604::1744404897::1744405058::1::::<><><>0<>0<>8e7aad65f40bc378008a1845faba6dc5<>res://.godot/imported/tileset_atlas_n.png-aa5840e77e9893102267dd12ee625ac1.s3tc.ctex::
+::res://scenes/::1744657048
+basic_enemy.tscn::PackedScene::3301293652149471090::1744656948::0::1::::<><><>0<>0<><>::uid://d3ar5ef2tkrhg::::res://scripts/basic_enemy.gd<>uid://bmxt16ijmfq54::::res://assets/opalbuster.png
+enemy.tscn::PackedScene/PackedScene::1276038857994848583::1744405058::0::1::::<><><>0<>0<><>::uid://cqy5fm3eqk7vn::::res://assets/flame_03.png
+hatchet.tscn::PackedScene::612578596731302499::1744657048::0::1::::<><><>0<>0<><>::
+player.tscn::PackedScene::4154075868826383616::1744657048::0::1::::<><><>0<>0<><>::uid://c6opqb3q4nb63::::res://scripts/Player.gd
+World.tscn::PackedScene::97895934435730856::1744657048::0::1::::<><><>0<>0<><>::uid://dciurx2wmw6m0::::res://scripts/main.gd<>uid://dit5umfvw78u7::::res://assets/tileset.tres<>uid://b0gja1f5vysmq::::res://scenes/player.tscn<>uid://bnbf3axpcamlm::::res://scenes/basic_enemy.tscn<>uid://sgef5vt5ofnj::::res://scenes/enemy.tscn
+::res://scripts/::1744656910
+>>>>>>> Stashed changes
 animation_enemy.gd::GDScript/GDScript::7383591606581314275::1744579155::0::1::::<>AnimationPlayer<><>0<>0<><>::
 basic_enemy.gd::GDScript::9125635654708369112::1744666634::0::1::::<>CharacterBody3D<><>0<>0<><>::
 main.gd::GDScript/GDScript::7317400709502847517::1744579155::0::1::::<>Node3D<><>0<>0<><>::
+<<<<<<< Updated upstream
 Player.gd::GDScript/GDScript::6978536232860125686::1744666590::0::1::::<>CharacterBody3D<><>0<>0<><>::
+=======
+Player.gd::GDScript::6978536232860125686::1744656910::0::1::::<>CharacterBody3D<><>0<>0<><>::
+>>>>>>> Stashed changes

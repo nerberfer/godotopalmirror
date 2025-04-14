@@ -7,7 +7,7 @@ const JUMP_VELOCITY = 4.0
 const SENSITIVITY = 0.004
 
 #bob variables
-const BOB_FREQ = 2.4	
+const BOB_FREQ = 2.4
 const BOB_AMP = 0.08
 var t_bob = 0.0
 
@@ -19,6 +19,8 @@ const FOV_CHANGE = 1.5
 @onready var health_component: Node = $HealthComponent
 
 func _process(delta):
+	health_lbl.text = str(health_component.health)
+	
 	if Input.is_action_just_pressed("quit"):
 		get_tree().quit()
 		
