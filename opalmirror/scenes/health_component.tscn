@@ -1,12 +1,6 @@
-<<<<<<< Updated upstream
 [gd_scene load_steps=2 format=3 uid="uid://cxung7hywm0s3"]
 
 [ext_resource type="Script" uid="uid://dvarc7beh3dwf" path="res://scripts/health_component.gd" id="1_a1tyf"]
-=======
-[gd_scene load_steps=2 format=3 uid="uid://coqh3k2tyx2sa"]
-
-[ext_resource type="Script" uid="uid://jk4t0rgqgyaa" path="res://scripts/health_component.gd" id="1_a1tyf"]
->>>>>>> Stashed changes
 
 [node name="HealthComponent" type="Node3D"]
 script = ExtResource("1_a1tyf")

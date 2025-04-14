@@ -1,6 +1,5 @@
 res://scenes/World.tscn
 res://assets/tileset.tres
-<<<<<<< Updated upstream
 res://scripts/health_component.gd
 res://scenes/player.tscn
 res://scripts/attack.gd
@@ -8,13 +7,3 @@ res://scenes/basic_enemy.tscn
 res://scenes/health_component.tscn
 res://scripts/Player.gd
 res://scripts/basic_enemy.gd
-=======
-res://scenes/hatchet.tscn
-res://scenes/player.tscn
-res://scripts/attack.gd
-res://scripts/health_component.gd
-res://scenes/health_component.tscn
-res://scripts/basic_enemy.gd
-res://scripts/Player.gd
-res://scenes/basic_enemy.tscn
->>>>>>> Stashed changes

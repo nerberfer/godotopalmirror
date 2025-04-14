@@ -1,7 +1,6 @@
-[gd_scene load_steps=13 format=4 uid="uid://b0gja1f5vysmq"]
+[gd_scene load_steps=7 format=4 uid="uid://iy0cyp5ujvh0"]
 
-[ext_resource type="Script" uid="uid://c6opqb3q4nb63" path="res://scripts/Player.gd" id="1_4flbx"]
-[ext_resource type="PackedScene" uid="uid://cxung7hywm0s3" path="res://scenes/health_component.tscn" id="2_g2els"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_guleu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dr132"]
 resource_name = "machado"
@@ -41,192 +40,21 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_serpc")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_3vyb7"]
-size = Vector3(0.397461, 0.195313, 0.200928)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_orpmd"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0rwas"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_71hlk"]
+size = Vector3(0.412445, 0.212067, 0.0872498)
 
-[sub_resource type="AudioStreamWAV" id="AudioStreamWAV_0rwas"]
+[node name="Hatchet" type="Node3D"]
 
-[sub_resource type="Animation" id="Animation_g2els"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Head/Camera3D/WeaponPivot/WeaponMesh:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-0.222135, 0.705376, -0.64243)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Head/Camera3D/WeaponPivot/WeaponMesh:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0.109448, -0.140535, -0.488695)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Head/Camera3D/WeaponPivot:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-0.3702, 0.663248, 0.624371)]
-}
-
-[sub_resource type="Animation" id="Animation_qhqgy"]
-resource_name = "attack"
-length = 0.7
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Head/Camera3D/WeaponPivot/WeaponMesh:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(0.178607, 0.825028, -0.799441), Vector3(0.178607, 0.825028, -0.799442)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Head/Camera3D/WeaponPivot/WeaponMesh:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(-0.608445, 0.897596, -1.11282), Vector3(-0.603156, 1.03635, -0.754343)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Head/Camera3D/WeaponPivot:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.7),
-"transitions": PackedFloat32Array(-2, 1),
-"update": 0,
-"values": [Vector3(-0.3702, -1.28644, 0.624371), Vector3(-0.3702, 0.663248, 0.624371)]
-}
-
-[sub_resource type="Animation" id="Animation_3vyb7"]
-resource_name = "idle"
-length = 3.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Head/Camera3D/WeaponPivot:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-0.3702, -1.28644, 0.624371)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Head/Camera3D/WeaponPivot/WeaponMesh:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1.51),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector3(-0.200954, 0.734772, -0.628368), Vector3(-0.237335, 0.68428, -0.652521)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Head/Camera3D/WeaponPivot/WeaponMesh:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 1.51),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector3(0.109448, -0.140535, -0.488695), Vector3(0.031162, -0.154087, -0.237472)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_hqtel"]
-_data = {
-&"RESET": SubResource("Animation_g2els"),
-&"attack": SubResource("Animation_qhqgy"),
-&"idle": SubResource("Animation_3vyb7")
-}
-
-[node name="Player" type="CharacterBody3D"]
-script = ExtResource("1_4flbx")
-
-[node name="Head" type="Node3D" parent="."]
-
-[node name="Camera3D" type="Camera3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.739348, 0.4531)
-v_offset = 1.0
-
-[node name="SpotLight3D" type="SpotLight3D" parent="Head/Camera3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.722832, 0.0940579)
-light_color = Color(0.845465, 0.654641, 0.369617, 1)
-spot_range = 8.06742
-spot_angle = 58.572
-
-[node name="WeaponPivot" type="Node3D" parent="Head/Camera3D"]
-transform = Transform3D(0.674087, -0.849221, 0.75997, 0.721591, 1.00147, 0.479047, -0.882067, 0.170285, 0.972671, 0, 0.0502656, 0)
-
-[node name="WeaponMesh" type="MeshInstance3D" parent="Head/Camera3D/WeaponPivot"]
-transform = Transform3D(0.881426, 0.451337, -0.139235, -0.466666, 0.877665, -0.10923, 0.072902, 0.161254, 0.984218, -0.222135, 0.705376, -0.64243)
+[node name="lamina" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_guleu")
 mesh = SubResource("ArrayMesh_qjvq4")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_orpmd")
 
-[node name="Hitbox" type="Area3D" parent="Head/Camera3D/WeaponPivot/WeaponMesh"]
-transform = Transform3D(1, -8.73238e-09, -3.49295e-08, 8.73238e-09, 1, -5.76812e-09, 3.49295e-08, 5.76812e-09, 1, 0, 0, 0)
-monitoring = false
+[node name="Area3D" type="Area3D" parent="lamina"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Head/Camera3D/WeaponPivot/WeaponMesh/Hitbox"]
-transform = Transform3D(1, 4.5448e-07, -9.59252e-06, -4.5448e-07, 1, -8.94114e-08, 9.59252e-06, 8.94157e-08, 1, -0.0629885, 0.25586, 0.011108)
-shape = SubResource("BoxShape3D_3vyb7")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("CapsuleShape3D_0rwas")
-debug_color = Color(0.971165, 0, 0.449811, 0.42)
-
-[node name="PlayerAudios" type="AudioStreamPlayer3D" parent="."]
-
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="PlayerAudios"]
-stream = SubResource("AudioStreamWAV_0rwas")
-volume_db = -15.856
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_hqtel")
-}
-autoplay = "idle"
-playback_default_blend_time = 0.1
-
-[node name="HealthComponent" parent="." instance=ExtResource("2_g2els")]
-
-[node name="HealthLbl" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-
-[connection signal="area_entered" from="Head/Camera3D/WeaponPivot/WeaponMesh/Hitbox" to="." method="_on_hitbox_area_entered"]
-[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lamina/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0596097, 0.265133, 0.00261202)
+shape = SubResource("BoxShape3D_71hlk")
