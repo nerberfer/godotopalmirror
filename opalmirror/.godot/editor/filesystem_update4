@@ -1,6 +1,9 @@
-res://scenes/player.tscn
-res://assets/tileset.tres
 res://scenes/World.tscn
+res://assets/tileset.tres
+res://scripts/health_component.gd
+res://scenes/player.tscn
+res://scripts/attack.gd
 res://scenes/basic_enemy.tscn
-res://scenes/hatchet.tscn
+res://scenes/health_component.tscn
 res://scripts/Player.gd
+res://scripts/basic_enemy.gd
