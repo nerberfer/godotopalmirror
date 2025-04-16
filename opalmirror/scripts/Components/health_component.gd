@@ -1,10 +1,9 @@
-extends Node3D
+extends Node
 
 @export var MaxHealth: float = 100.0
 
 var health: float = MaxHealth
 
-# Called when the node enters the scene tree for the first time.
 func damage(attack: Attack) -> void:
 	health -= attack.damage
 	
