@@ -1,3 +1,4 @@
+Area3D
 Node
 EnemyAttack
 EnemyChase
@@ -5,11 +6,9 @@ EnemyWander
 StateMachine
 Label
 CollisionShape3D
-Area3D
 AnimationTree
 AnimationPlayer
 AnimatedSprite3D
 Node3D
 CharacterBody3D
 MeshInstance3D
-NavigationAgent3D

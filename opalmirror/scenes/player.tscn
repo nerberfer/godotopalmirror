@@ -41,8 +41,8 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_serpc")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_3vyb7"]
-size = Vector3(0.397461, 0.195313, 0.200928)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_g2els"]
+points = PackedVector3Array(-0.247214, 0.184057, -0.00479431, -0.200664, 0.149162, -0.0164115, 0.0667298, -0.362458, 0.0533429, 0.0783493, -0.362458, -0.0513143, 0.113244, 0.346803, -0.0280492, -0.189044, 0.370114, 0.0184401, -0.00302339, -0.374114, -0.0396766, -0.200664, 0.370114, -0.0164115, 0.113244, 0.346803, 0.0300777, -0.00302339, -0.374114, 0.0417052, 0.101625, -0.350803, 0.00682288, 0.0202155, -0.257774, -0.0513143, -0.0379182, 0.358458, 0.0300777, -0.0611571, 0.358458, -0.0280492, -0.235558, 0.137506, 0.00682288, 0.0318714, -0.26943, 0.0533429, 0.1249, 0.218879, -0.0164115, 0.1249, 0.218879, 0.0184401, 0.0900052, -0.362458, 0.0417052, -0.247214, 0.311908, 0.00682288, 0.0783493, 0.358458, -0.0280492, 0.0202155, -0.362458, -0.0513143, 0.0318714, -0.362458, 0.0533429, -0.189044, 0.160745, 0.0184401, 0.0783493, 0.358458, 0.0300777, -0.212319, 0.288669, -0.0164115, 0.101625, -0.350803, -0.00479431, -0.235558, 0.370114, -0.00479431, 0.0434909, -0.246191, -0.0513143, -0.247214, 0.184057, 0.00682288, -0.235558, 0.137506, -0.00479431, -0.0146429, -0.350803, -0.00479431)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0rwas"]
 
@@ -198,12 +198,11 @@ transform = Transform3D(0.881426, 0.451337, -0.139235, -0.466666, 0.877665, -0.1
 mesh = SubResource("ArrayMesh_qjvq4")
 
 [node name="Hitbox" type="Area3D" parent="Head/Camera3D/WeaponPivot/WeaponMesh"]
-transform = Transform3D(1, -8.73238e-09, -3.49295e-08, 8.73238e-09, 1, -5.76812e-09, 3.49295e-08, 5.76812e-09, 1, 0, 0, 0)
 monitoring = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Head/Camera3D/WeaponPivot/WeaponMesh/Hitbox"]
-transform = Transform3D(1, 4.5448e-07, -9.59252e-06, -4.5448e-07, 1, -8.94114e-08, 9.59252e-06, 8.94157e-08, 1, -0.0629885, 0.25586, 0.011108)
-shape = SubResource("BoxShape3D_3vyb7")
+transform = Transform3D(1, -1.49012e-08, 0, -1.49012e-08, 1, 7.45058e-09, -1.49012e-08, 0, 1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_g2els")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_0rwas")
@@ -228,5 +227,5 @@ playback_default_blend_time = 0.1
 offset_right = 40.0
 offset_bottom = 23.0
 
-[connection signal="area_entered" from="Head/Camera3D/WeaponPivot/WeaponMesh/Hitbox" to="." method="_on_hitbox_area_entered"]
+[connection signal="body_entered" from="Head/Camera3D/WeaponPivot/WeaponMesh/Hitbox" to="." method="_on_hitbox_body_entered"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

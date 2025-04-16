@@ -18,6 +18,8 @@ const FOV_CHANGE = 1.5
 @onready var health_lbl: Label = $HealthLbl
 @onready var health_component: Node = $HealthComponent
 
+var basic_attack: Attack = Attack.new(25.0, self)
+
 func _process(delta):
 	if Input.is_action_just_pressed("quit"):
 		get_tree().quit()
@@ -101,10 +103,10 @@ func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "attack":
 		anim_player.play("idle")
 		hitbox.monitoring = false
-		
-func _on_hitbox_area_entered(area: Area3D) -> void:
-	if area.is_in_group("enemy"):
-		print("enemy hit") # Replace with function body.
 
 func on_death() -> void:
 	get_tree().quit()
+
+func _on_hitbox_body_entered(body: Node3D) -> void:
+	if body.is_in_group("Enemy"):
+		body.health_component.damage(basic_attack)

@@ -10,3 +10,4 @@ res://scripts/Enemies/enemy_attack.gd
 res://scripts/Components/health_component.gd
 res://scenes/health_component.tscn
 res://scripts/Enemies/basic_enemy.gd
+res://scripts/Important/Player.gd

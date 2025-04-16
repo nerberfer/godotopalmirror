@@ -1,6 +1,7 @@
 extends CharacterBody3D
 
 @onready var nav = $NavigationAgent3D
+@onready var health_component: Node = $HealthComponent
 
 @export var WalkSpeed: float = 1.5
 @export var RunSpeed: float = 3.0
