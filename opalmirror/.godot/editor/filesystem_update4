@@ -1,4 +1,12 @@
-res://scenes/World.tscn
-res://assets/tileset.tres
 res://scenes/basic_enemy.tscn
+res://assets/tileset.tres
+res://scripts/Enemies/enemy_chase.gd
+res://scripts/Enemies/enemy_wander.gd
+res://scripts/State Machine/state.gd
+res://scenes/World.tscn
 res://scenes/player.tscn
+res://scripts/State Machine/state_machine.gd
+res://scripts/Enemies/enemy_attack.gd
+res://scripts/Components/health_component.gd
+res://scenes/health_component.tscn
+res://scripts/Enemies/basic_enemy.gd

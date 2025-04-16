@@ -15,13 +15,19 @@ var t_bob = 0.0
 const BASE_FOV = 75.0
 const FOV_CHANGE = 1.5
 
+@onready var health_lbl: Label = $HealthLbl
+@onready var health_component: Node = $HealthComponent
+
 func _process(delta):
 	if Input.is_action_just_pressed("quit"):
 		get_tree().quit()
 		
-	if Input.is_action_just_pressed("attack"):
+	if Input.is_action_just_pressed("attack") and not anim_player.current_animation == "attack":
+		anim_player.stop()
 		anim_player.play("attack")
 		hitbox.monitoring = true
+		
+	health_lbl.text = str(health_component.health)
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = 9.8
@@ -61,6 +67,7 @@ func _physics_process(delta):
 	# Get the input direction and handle the movement/deceleration.
 	var input_dir = Input.get_vector("left", "right", "forward", "back")
 	var direction = (head.transform.basis * transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	
 	if is_on_floor():
 		if direction:
 			velocity.x = direction.x * speed
@@ -95,8 +102,9 @@ func _on_animation_player_animation_finished(anim_name):
 		anim_player.play("idle")
 		hitbox.monitoring = false
 		
-
-
 func _on_hitbox_area_entered(area: Area3D) -> void:
 	if area.is_in_group("enemy"):
 		print("enemy hit") # Replace with function body.
+
+func on_death() -> void:
+	get_tree().quit()

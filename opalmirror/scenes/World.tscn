@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://bnoljquut3vw"]
 
-[ext_resource type="Script" uid="uid://dciurx2wmw6m0" path="res://scripts/main.gd" id="1_1lgw5"]
+[ext_resource type="Script" uid="uid://dciurx2wmw6m0" path="res://scripts/Important/main.gd" id="1_1lgw5"]
 [ext_resource type="MeshLibrary" uid="uid://dit5umfvw78u7" path="res://assets/tileset.tres" id="1_bcbcq"]
 [ext_resource type="PackedScene" uid="uid://b0gja1f5vysmq" path="res://scenes/player.tscn" id="1_c6gwx"]
 [ext_resource type="PackedScene" uid="uid://bnbf3axpcamlm" path="res://scenes/basic_enemy.tscn" id="4_d1c63"]
@@ -51,7 +51,7 @@ metadata/_editor_floor_ = Vector3(0, 0, 0)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_eu7l1")
 
-[node name="Player" parent="." instance=ExtResource("1_c6gwx")]
+[node name="Player" parent="." groups=["Player"] instance=ExtResource("1_c6gwx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.12352, 6.5376, -0.646355)
 
 [node name="Enemy" parent="." instance=ExtResource("4_js7pq")]

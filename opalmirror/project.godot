@@ -13,7 +13,7 @@ config_version=5
 config/name="opalmirror"
 run/main_scene="uid://bnoljquut3vw"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+boot_splash/show_image=false
 
 [display]
 
@@ -26,6 +26,7 @@ window/stretch/mode="viewport"
 [global_group]
 
 Enemy=""
+Player=""
 
 [input]
 

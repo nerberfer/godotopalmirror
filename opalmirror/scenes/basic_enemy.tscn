@@ -1,7 +1,12 @@
-[gd_scene load_steps=54 format=3 uid="uid://bnbf3axpcamlm"]
+[gd_scene load_steps=59 format=3 uid="uid://bnbf3axpcamlm"]
 
-[ext_resource type="Script" uid="uid://d3ar5ef2tkrhg" path="res://scripts/basic_enemy.gd" id="1_3i4hm"]
+[ext_resource type="Script" uid="uid://d3ar5ef2tkrhg" path="res://scripts/Enemies/basic_enemy.gd" id="1_3i4hm"]
 [ext_resource type="Texture2D" uid="uid://bmxt16ijmfq54" path="res://assets/opalbuster.png" id="2_md22f"]
+[ext_resource type="PackedScene" uid="uid://cxung7hywm0s3" path="res://scenes/health_component.tscn" id="3_fn5nn"]
+[ext_resource type="Script" uid="uid://c5mi8dvdvh8wm" path="res://scripts/State Machine/state_machine.gd" id="4_wm70f"]
+[ext_resource type="Script" uid="uid://c4p3iv24lk2v3" path="res://scripts/Enemies/enemy_wander.gd" id="5_ve544"]
+[ext_resource type="Script" uid="uid://cdra1ardfm5ql" path="res://scripts/Enemies/enemy_chase.gd" id="6_ve544"]
+[ext_resource type="Script" uid="uid://wsrgvboqyhe2" path="res://scripts/Enemies/enemy_attack.gd" id="7_qhw0p"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3i4hm"]
 radius = 0.135282
@@ -382,3 +387,22 @@ speed_scale = 3.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../AnimatedSprite3D")
+
+[node name="HealthComponent" parent="." instance=ExtResource("3_fn5nn")]
+
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("InitialState")]
+script = ExtResource("4_wm70f")
+InitialState = NodePath("EnemyChase")
+metadata/_custom_type_script = "uid://c5mi8dvdvh8wm"
+
+[node name="EnemyWander" type="Node" parent="StateMachine"]
+script = ExtResource("5_ve544")
+metadata/_custom_type_script = "uid://c4p3iv24lk2v3"
+
+[node name="EnemyChase" type="Node" parent="StateMachine"]
+script = ExtResource("6_ve544")
+metadata/_custom_type_script = "uid://cdra1ardfm5ql"
+
+[node name="EnemyAttack" type="Node" parent="StateMachine"]
+script = ExtResource("7_qhw0p")
+metadata/_custom_type_script = "uid://wsrgvboqyhe2"
